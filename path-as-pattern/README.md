@@ -119,3 +119,5 @@ the format string:
    time spent on string stripping and splitting.
  - The categories are knowable in advance and the `csv` implementation in
    `dask` should reflect that.
+ - Add `regex` support for pattern as a path.
+ - Swap out `reverse_format` for an external library such as [`parse`](http://pypi.python.org/pypi/parse).
