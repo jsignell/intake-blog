@@ -23,3 +23,30 @@ sources:
           row: emissions
           width: 300
           height: 200
+          
+  google_landsat_8:
+    description: Google Cloud Storage hosted files containing Landsat 8 data for a particular path, row and product_id. 
+    driver: rasterio
+    parameters:
+      path:
+        description: landsat path
+        type: int
+        default: 14
+      row:
+        description: landsat row
+        type: int
+        default: 32
+      product_id:
+        description: landsat file id
+        type: str
+        default: LC08_L1TP_014032_20180903_20180912_01_T1
+    args: 
+      urlpath: 
+       - https://storage.googleapis.com/gcp-public-data-landsat/LC08/01/{{ '%03d' % path }}/{{ '%03d' % row }}/{{ product_id }}/{{ product_id }}_B4.TIF
+       - https://storage.googleapis.com/gcp-public-data-landsat/LC08/01/{{ '%03d' % path }}/{{ '%03d' % row }}/{{ product_id }}/{{ product_id }}_B5.TIF
+      path_as_pattern: _B{band:d}.TIF
+      concat_dim: band
+      chunks:
+        band: 1
+        x: 256
+        y: 256

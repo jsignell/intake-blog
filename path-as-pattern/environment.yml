@@ -1,0 +1,16 @@
+name: path-as-pattern
+channels:
+- intake
+- pyviz
+- defaults
+- conda-forge
+dependencies:
+- python=3.6
+- intake=0.2.6
+- intake-xarray=0.2.3
+- pandas>=0.23.4
+- dask>=0.19.0
+- xarray>=0.10.8
+- hvplot=0.2.1
+- geoviews
+- rasterio
