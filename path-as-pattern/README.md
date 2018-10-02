@@ -30,6 +30,7 @@ data = cat.data_source().read()
 
 Click the button below to launch an interactive example of using a catalog
 with real landsat data.
+
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jsignell/intake-blog/master?filepath=path-as-pattern%2Flandsat.ipynb)
 
 ## How to use it - data engineer
@@ -76,6 +77,7 @@ outcome).
 
 Click the button below to launch an interactive example of setting up a
 catalog with *path_as_pattern*.
+
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jsignell/intake-blog/master?filepath=path-as-pattern%2Fcsv.ipynb)
 
 ## How it works
