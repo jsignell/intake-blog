@@ -110,9 +110,10 @@ the format string:
 ## What's next
  - So far only the `CSV` plugin and `intake-xarray` plugin with `rasterio`
    driver support this behavior. More plugins can be made to respect
-   `path_as_pattern` notation, but if the glob can be fed directly into an
-   external library - as is often the case - then changes may be needed on
-   the external library to keep track of the path associated with each file.
+   `path_as_pattern` notation, but if the glob is fed directly into an
+   external library then changes may be needed on the external library to
+   keep track of the path associated with each file or the glob handling
+   and concatenation can be done in the plugin directly.
  - This feature seems most helpful in the context of multiple file loading,
    but it could certainly be extended to parse single files to save users
    time spent on string stripping and splitting.
