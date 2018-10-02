@@ -11,9 +11,9 @@ to declare that information in a concise spec.
 loading and sharing data. You might have seen earlier blog posts
 [introducing Intake](https://www.anaconda.com/blog/developer-blog/intake-taking-the-pain-out-of-data-access/)
  and [describing caching](https://www.anaconda.com/blog/developer-blog/intake-caching-data-on-first-read-makes-future-analysis-faster/).
-Intake separates the concepts of the *data engineer* - the person currating,
-managing, and diseminating data - from the *data user* - the person analyzing
-and visualizing the data. The data engineer sets up catalog files desribing
+Intake separates the concepts of the *data engineer* - the person curating,
+managing, and disseminating data - from the *data user* - the person analyzing
+and visualizing the data. The data engineer sets up catalog files describing
 data sources and the data user loads data without needing to know how it is
 stored. Intake makes creating functionality easy. Here we show new
 functionality for dealing with structured file-names.
