@@ -25,7 +25,7 @@ sources:
           height: 200
           
   google_landsat_8:
-    description: Google Cloud Storage hosted files containing Landsat 8 data for a particular path, row and product_id. 
+    description: Google Cloud Storage hosted files containing Landsat 8 data for a particular path, row and product_id. Landsat data is collected by NASA and the USGS and freely available for use.
     driver: rasterio
     parameters:
       path:
@@ -50,3 +50,5 @@ sources:
         band: 1
         x: 256
         y: 256
+    metdata:
+      origin: https://landsat.usgs.gov/landsat-data-access

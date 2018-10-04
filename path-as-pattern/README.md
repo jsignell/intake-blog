@@ -29,7 +29,10 @@ data = cat.data_source().read()
 ```
 
 Click the button below to launch an interactive example of using a catalog
-with real satellite imagery data from the [landsat project](https://landsat.usgs.gov/landsat-project-description).
+with real satellite imagery data from the [landsat project](https://landsat.usgs.gov/landsat-project-description)
+to calculate Normalized Difference Vegetation Index ([NDVI](https://earthobservatory.nasa.gov/Features/MeasuringVegetation/measuring_vegetation_2.php)):
+
+[![Plot of calculated NDVI](ndvi_plot.png)](https://jsignell.github.com/intake-blog/path-as-pattern/ndvi_plot.html)
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jsignell/intake-blog/master?filepath=path-as-pattern%2Flandsat.ipynb)
 
