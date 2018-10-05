@@ -41,7 +41,7 @@ or download the notebook [here](https://jsignell.github.com/intake-blog/path-as-
 
 ## How to use it - data engineer
 When loading multiple files, the locations of the files can often be provided
-as a list or as a glob (a path containing "*" wildcards). For instance, let's
+as a list or as a glob (a path containing `"*"` wildcards). For instance, let's
 suppose that we have a number of CSV files containing precipitation forecasts
 for a number of models run under different emissions scenarios. Each forecast
 is stored in one file with the model and emissions scenario encoded in the
@@ -52,7 +52,7 @@ urlpath: 'data/SRLCC_*_Precip_*.csv'
 ```
 
 In order to capture the data encoded into the names of the files, we can replace
-the "*" wildcards with field-names, as follows, making what we'll refer to
+the `"*"` wildcards with field-names, as follows, making what we'll refer to
 as a path *pattern*:
 
 ```
@@ -118,7 +118,5 @@ the format string:
  - This feature seems most helpful in the context of multiple file loading,
    however, the functionality may also be useful for parsing other similarly
    structured text in general.
- - The categories are knowable in advance and the `csv` implementation in
-   `dask` should reflect that [GH#178](https://github.com/ContinuumIO/intake/issues/178).
  - Add `regex` support for pattern as a path.
  - Swap out `reverse_format` for an external library such as [`parse`](http://pypi.python.org/pypi/parse).
