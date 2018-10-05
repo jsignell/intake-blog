@@ -23,7 +23,7 @@ Intake abstracts away messy data storage practices so data users
 don't need to know about it. You get a full dataset from all the files,
 together with the information from the filenames, in just two lines of code:
 
-```
+```python
 cat = intake.load_catalog('catalog.yml')
 data = cat.data_source().read()
 ```
@@ -47,7 +47,7 @@ for a number of models run under different emissions scenarios. Each forecast
 is stored in one file with the model and emissions scenario encoded in the
 filename. The following glob pattern would match all of the files:
 
-```
+```yaml
 urlpath: 'data/SRLCC_*_Precip_*.csv'
 ```
 
@@ -55,7 +55,7 @@ In order to capture the data encoded into the names of the files, we can replace
 the `"*"` wildcards with field-names, as follows, making what we'll refer to
 as a path *pattern*:
 
-```
+```yaml
 urlpath: 'data/SRLCC_{emissions}_Precip_{model}.csv'
 ```
 
@@ -65,7 +65,7 @@ populated from the path or filename and returned on the data.
 When passing an explicit list of paths, the argument *path_as_pattern* can
 be used to pass the *pattern* we want applied to the filenames:
 
-```
+```yaml
 urlpath:
   - 'data/SRLCC_a1b_Precip_ECHAM5-MPI.csv'
   - 'data/SRLCC_b1_Precip_PCM-NCAR.csv'
