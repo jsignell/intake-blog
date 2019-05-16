@@ -22,20 +22,47 @@ and visualizing the data. The data engineer sets up catalog files describing
 data sources and the data user loads data without needing to know how it is
 stored.
 
-## How to use it
-To start using the GUI pip/conda install intake and panel. intake.GUI:
+## Try it out
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intake/intake-examples/master?filepath=GUI.ipynb)
+
+To start using the GUI pip/conda install intake and panel and run:
+
+```bash
+python -c "import intake; intake.gui.show()"
+```
+
+This command will open a browser tab containing a panel application (more
+on this in the "How it Works" section)
+
+If you'd rather work in the notebook open a notebook and run:
 
 ```python
 import intake
 intake.gui
 ```
 
+# GIF HERE
+
+## How to use it
+Once you have a GUI, you can add and remove catalogs from the GUI using the +
+and - buttons, select data sources from within catalogs, read the yaml that
+those describes those sources. Use the plot button to see the pre-defined plots
+that the data engineer has defined (if you would like to define some plots
+see the [plotting docs](https://intake.readthedocs.io/en/latest/plotting.html))
+
+
+# GIF HERE
+
+
+For more information on how to interact with the new GUI, see the
+[GUI docs](https://intake.readthedocs.io/en/latest/gui.html).
+
 ## How it works (hint: Panel!)
 
 
-## What it does
-
-
 ## What's next
-We have ambitious plans for the future of this GUI. The vision is that one
-day we will have a
+We have ambitious plans for the future of this GUI. In the near future,
+we anticipate adding a mechanism for inputting user parameters, adding
+some basic custom plotting, and allowing the editing and saving of catalogs.
+See [GH#225](https://github.com/intake/intake/issues/225) for a full discussion
+of the vision.
