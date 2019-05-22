@@ -56,7 +56,7 @@ For more information on how to interact with the new GUI, see the
 [GUI docs](https://intake.readthedocs.io/en/latest/gui.html).
 
 ## How it works (hint: Panel!)
-The intake GUI is build using the latest project in the [PyViz](https://pyviz.org)
+The intake GUI is built using the latest project in the [PyViz](https://pyviz.org)
 ecosystem: [Panel](https://panel.pyviz.org). Panel provides a composable dashboarding
 solution for displaying plots, images, tables, or text and widgets for interacting
 with them. Panel works both in a Jupyter notebook and in a standalone secure web server
