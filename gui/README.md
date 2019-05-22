@@ -25,7 +25,7 @@ stored.
 ## Try it out
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intake/intake-examples/master?filepath=GUI.ipynb)
 
-To start using the GUI pip/conda install intake and panel and run:
+To use the GUI locally, pip/conda install intake and panel. Then run:
 
 ```bash
 python -c "import intake; intake.gui.show()"
@@ -65,7 +65,7 @@ using the same source code.
 From the data engineer perspective this means that you can serve the intake
 GUI at an endpoint and use it as a data exploration tool for your data users. It
 also means that it is straightforward to customize and reorganize the GUI to insert
-your logo, or add new functionality.
+your own logo, reuse parts of it in your own applications, or add new functionality.
 
 ## What's next
 We have ambitious plans for the future of this GUI. In the near future,
