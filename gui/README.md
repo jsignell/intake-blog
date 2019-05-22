@@ -41,7 +41,7 @@ import intake
 intake.gui
 ```
 
-# GIF HERE
+![Intake GUI from local](assets/gui_start.gif)
 
 ## How to use it
 Once you have a GUI, you can add and remove catalogs from the GUI using the +
@@ -50,15 +50,22 @@ those describes those sources. Use the plot button to see the pre-defined plots
 that the data engineer has defined (if you would like to define some plots
 see the [plotting docs](https://intake.readthedocs.io/en/latest/plotting.html))
 
-
-# GIF HERE
-
+![Intake GUI from remote with nested](assets/gui_nested.gif)
 
 For more information on how to interact with the new GUI, see the
 [GUI docs](https://intake.readthedocs.io/en/latest/gui.html).
 
 ## How it works (hint: Panel!)
+The intake GUI is build using the latest project in the [PyViz](https://pyviz.org)
+ecosystem: [Panel](https://panel.pyviz.org). Panel provides a composable dashboarding
+solution for displaying plots, images, tables, or text and widgets for interacting
+with them. Panel works both in a Jupyter notebook and in a standalone secure web server
+using the same source code.
 
+From the data engineer perspective this means that you can serve the intake
+GUI at an endpoint and use it as a data exploration tool for your data users. It
+also means that it is straightforward to customize and reorganize the GUI to insert
+your logo, or add new functionality.
 
 ## What's next
 We have ambitious plans for the future of this GUI. In the near future,
